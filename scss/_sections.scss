@@ -1,0 +1,358 @@
+.site-sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+    // border: 1px solid blue;
+
+    .section {
+        width: 80%;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr;
+        // grid-gap: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .img-contianer {
+            width: 50%;
+
+            img {
+                width: 96%;
+                height: 96%;
+            }
+        }
+
+        .text-container {
+            width: 50%;
+            padding: 5% 5%;
+
+            .section-heading > span {
+                font-size: clamp(25px, 3vw, 40px);
+                font-weight: 100;
+                letter-spacing: 8px;
+            }
+
+            p {
+                color: #5e6e85;
+                font-size: 14px;
+                margin-top: 20px;
+                line-height: 2;
+            }
+
+            p.section-button {
+                display: flex;
+                align-items: center;
+                letter-spacing: 2.8px;
+                color: #1b1b1b;
+                font-size: 14px;
+                margin: 1rem 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.section-heading > span {
+    font-size: clamp(25px, 3vw, 40px);
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+
+.section-sub-heading {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #5e6e85;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+// ========================================
+
+.services-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10rem;
+    // border: 1px solid blue;
+
+    .services-details {
+        display: flex;
+        justify-content: space-between;
+        // border: 1px solid yellow;
+        width: 80%;
+        // margin-left: 20%;
+        // margin-right: 20%;
+
+        .service {
+            max-width: 33%;
+            // border: 1px solid red;
+            overflow: hidden;
+            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .service-img {
+                max-width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+            .service-desc {
+                padding: 5px;
+                text-align: left;
+                letter-spacing: 0.32px;
+                color: #5e6e85;
+                opacity: 1;
+                font-size: 16px;
+                margin: 1rem 0;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.service-heading {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 4.25px;
+    color: #1a1a1a;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+// ===============================================
+// background: transparent linear-gradient(33deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+
+.thick-heading {
+    font-size: clamp(25px, 3vw, 40px);
+    display: inline-block;
+    letter-spacing: 8px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-family: belleza;
+    font-weight: 900;
+    padding-left: 0;
+}
+
+.influencer-heading {
+    font-size: clamp(25px, 3vw, 40px);
+    display: inline-block;
+    letter-spacing: 8px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-family: belleza;
+    font-weight: normal;
+    padding-left: 1rem;
+}
+
+.influencer-text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.influencer-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    overflow: hidden;
+    // background-color: red;
+}
+
+.influencer-carousel-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 2rem;
+    // align-self: center;
+    overflow: hidden;
+    // background-color: red;
+
+    .influencer-slider-item {
+        width: 35%;
+        background: transparent linear-gradient(33deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+        overflow: hidden;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+
+        .slider-img {
+            width: 100%;
+            height: 30%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .slide-text-section{
+            width: 100%;
+            padding: 20px;
+            .slide-heading{
+                font-weight: bold;
+                font-size: 17px;
+                text-align: center;
+                letter-spacing: 4.25px;
+                height: 40px;
+                color: #FFFFFF;
+                margin: 0.5rem 0;
+                text-transform: uppercase;
+            }
+    
+            .slide-desc{
+                text-align: center;
+                letter-spacing: 0.32px;
+                color: #FFFFFF;
+                opacity: 0.7;
+                font-size: 16px;
+                margin: 1rem 0;
+                line-height: 2;
+                min-height: 290px;
+            }
+        }
+
+        .follower-count{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 5% 0;
+
+            .counter{
+                h1{
+                    font: normal normal 300 50px/38px Open Sans;
+                    color: #ffffff;
+                }
+
+                p{
+                    text-align: center;
+                    font: normal normal normal 17px/38px Open Sans;
+                    letter-spacing: 0.42px;
+                    margin: 0.5rem 0;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .slider-social-icons{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 1rem;
+
+            .social-icons{
+                width: 40%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+            }
+        }
+    }
+}
+
+// =================================================
+
+.product-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    background: transparent linear-gradient(54deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+
+
+    .product-list-section{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .product-list-container{
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr;
+            // grid-template-rows: auto;
+            // grid-gap: 3rem;
+
+            .product-list-item{
+                max-width: calc(100% / 3.3);
+                overflow: hidden;
+
+                .product-list-img-container{
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 80%;
+                    }
+                }
+
+                .product-list-heading-container{
+                    width: 100%;
+                    .p-list-heading{
+                        font-weight: bold;
+                        font-size: 17px;
+                        text-align: left;
+                        letter-spacing: 4.25px;
+                        color: #FFFFFF;
+                        margin: 0.5rem 0;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .product-description{
+                    width: 100%;
+                    p{
+                        text-align: left;
+                        letter-spacing: 0.32px;
+                        color: #FFFFFF;
+                        opacity: 0.7;
+                        font-size: 16px;
+                        margin: 1rem 0;
+                        line-height: 2;
+                    }
+                }
+
+                .product-site-link{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                    letter-spacing: 3.2px;
+                    color: #FFFFFF;
+                    font-size: 13px;
+                    margin: 1rem 0;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+            }//end of the product list item
+
+        }
+    }
+}
