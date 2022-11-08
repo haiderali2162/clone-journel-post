@@ -356,3 +356,127 @@
         }
     }
 }
+
+// ========================================================
+
+
+.influencer-words{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+
+.words-text-section{
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .some-words span{
+        font-size: clamp(25px,3vw,40px);
+        display: inline-block;
+        letter-spacing: 8px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+        font-family: Optima;
+        font-weight: normal;
+        padding-left: 0;
+    }
+
+    .words-sub-heading{
+        font-weight: normal;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 4px;
+        color: #5E6E85;
+        margin: 0.5rem 0;
+        text-transform: uppercase;
+    }
+}
+
+
+.influencer-word-container{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    // border: 1px solid #ffcc70;
+
+    .influencer-names-container{
+        width: 100%;
+        margin-left: 1rem;
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            margin-bottom: 2rem;
+
+            li{
+                font-size: 12px;
+                letter-spacing: 3px;
+                color: #8DA2BB;
+                /* color: #FFD88F; */
+                border: 0;
+                width: 12rem;
+                background: transparent;
+                text-transform: uppercase;
+                cursor: pointer;
+                margin: 0 20px;
+            }
+        }
+    }
+
+
+    .influencer-pic-desc{
+        width: 100%;
+        padding: 5rem  8rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #ffcc70;
+
+
+        .influencer-img-container{
+            width: 75%;
+            overflow: hidden;
+            margin-left: 1rem;
+            img{
+                width: 85%;
+                height: 85%;
+            }
+        }
+
+        .influencer-desc{
+            width: 70%;
+            // border: 1px solid red;
+
+            .influencer-desc-heading{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #1a1a1a;
+                letter-spacing: 4px;
+                margin-bottom: 1rem;
+            }
+
+            .influencer-desc-detail{
+                text-align: left;
+                letter-spacing: 0.32px;
+                color: #5e6e85;
+                opacity: 1;
+                font-size: 16px;
+                margin: 1rem 0;
+                line-height: 2;
+            }
+        }
+    }
+}
