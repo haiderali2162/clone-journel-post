@@ -9,6 +9,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.selection-color {
+  color: #FFD88F !important;
+}
+
 nav {
   height: 128px;
   overflow: hidden;
