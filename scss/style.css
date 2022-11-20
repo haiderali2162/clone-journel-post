@@ -1017,6 +1017,8 @@ footer .footer-container .footer-links ul li a {
   width: 100%;
   color: gray;
   margin-top: 5em;
+  border: 1px solid gray;
+  padding: 2em;
 }
 
 .contact-wrapper .contact-us-view .contact-us-details .contact-us-company-name {
