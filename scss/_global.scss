@@ -1,3 +1,7 @@
+// gradient
+$background-gradient: transparent linear-gradient(33deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+
+
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -18,4 +22,10 @@ a {
 
 .selection-color {
     color: #FFD88F !important;
+}
+
+
+a{
+    color: black;
+    text-decoration: gray;
 }

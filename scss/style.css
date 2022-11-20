@@ -21,6 +21,12 @@ a {
   color: #FFD88F !important;
 }
 
+a {
+  color: black;
+  -webkit-text-decoration: gray;
+          text-decoration: gray;
+}
+
 nav {
   height: 128px;
   overflow: hidden;
@@ -940,5 +946,106 @@ footer .footer-container .footer-links ul li {
   padding: 0 1rem;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+footer .footer-container .footer-links ul li a {
+  text-align: left;
+  letter-spacing: 2.8px;
+  color: #fcfcfc;
+  padding: 0 1rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-wrapper {
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .contact-us-view {
+  width: 80%;
+}
+
+.contact-wrapper .contact-us-view .contact-us-header {
+  min-height: 300px;
+  background: transparent linear-gradient(33deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .contact-us-view .contact-us-header .contact-us-company-name h1 {
+  font-size: 300%;
+}
+
+.contact-wrapper .contact-us-view .contact-us-header .contact-us-about-company {
+  margin-top: 2em;
+}
+
+.contact-wrapper .contact-us-view .contact-us-header .contact-us-about-company p {
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details {
+  width: 100%;
+  color: gray;
+  margin-top: 5em;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details .contact-us-company-name {
+  width: 100%;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details .contact-us-company-name h1 {
+  text-align: center;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details .contact-addr, .contact-wrapper .contact-us-view .contact-us-details .flex-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details .contact-addr h3, .contact-wrapper .contact-us-view .contact-us-details .flex-center h3 {
+  padding-right: 1em;
+}
+
+.contact-wrapper .contact-us-view .contact-us-details .contact-addr p, .contact-wrapper .contact-us-view .contact-us-details .flex-center p {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */
