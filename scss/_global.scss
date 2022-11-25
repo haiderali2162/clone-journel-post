@@ -1,5 +1,7 @@
 // gradient
 $background-gradient: transparent linear-gradient(33deg, #4158d0 0%, #c850c0 100%) 0% 0% no-repeat padding-box;
+// mobile screen break point
+$bp-mobile: 375px;
 
 
 *,*::after,*::before{

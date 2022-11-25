@@ -16,18 +16,34 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: $bp-mobile) {
+            flex-direction: column;
+            align-items: center;
+            min-width: 100%;
+        }
+
         .img-contianer {
             width: 50%;
+            @media screen and (max-width: $bp-mobile) {
+                min-width: 80%;
+            }
 
             img {
                 width: 96%;
                 height: 96%;
+                @media screen and (max-width: $bp-mobile) {
+                    max-width: 100%;
+                }
             }
         }
 
         .text-container {
             width: 50%;
             padding: 5% 5%;
+
+            @media screen and (max-width: $bp-mobile) {
+                min-width: 80%;
+            }
 
             .section-heading > span {
                 font-size: clamp(25px, 3vw, 40px);
@@ -88,11 +104,19 @@
         justify-content: space-between;
         // border: 1px solid yellow;
         width: 80%;
+        @media screen and (max-width: $bp-mobile) {
+            min-width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
         // margin-left: 20%;
         // margin-right: 20%;
 
         .service {
             max-width: 33%;
+            @media screen and (max-width: $bp-mobile) {
+                min-width: 70%;
+            }
             // border: 1px solid red;
             overflow: hidden;
             padding: 0 10px;
@@ -294,6 +318,11 @@
             display: flex;
             justify-content: space-between;
             overflow: hidden;
+            @media screen and (max-width: $bp-mobile) {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
             // display: grid;
             // grid-template-columns: 1fr 1fr 1fr;
             // grid-template-rows: auto;
@@ -301,6 +330,9 @@
 
             .product-list-item{
                 max-width: calc(100% / 3.3);
+                @media screen and (max-width: $bp-mobile) {
+                    min-width: 70%;
+                }
                 overflow: hidden;
 
                 .product-list-img-container{
@@ -376,6 +408,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (max-width: $bp-mobile) {
+        min-width: 100%;
+        padding: 1em;
+        // background-color: red;
+    }
     .some-words span{
         font-size: clamp(25px,3vw,40px);
         display: inline-block;
@@ -417,6 +455,7 @@
             justify-content: space-around;
             align-items: center;
             list-style-type: none;
+            flex-wrap: wrap;
             margin-bottom: 2rem;
 
             li{
@@ -443,20 +482,39 @@
         justify-content: space-around;
         align-items: center;
         border: 1px solid #ffcc70;
+        @media screen and (max-width: $bp-mobile) {
+            flex-direction: column;
+            min-width: 100%;
+        }
 
 
         .influencer-img-container{
             width: 75%;
             overflow: hidden;
             margin-left: 1rem;
+            @media screen and (max-width: $bp-mobile) {
+                min-width: 100%;
+                width: 250px;
+            }
             img{
                 width: 85%;
                 height: 85%;
+                @media screen and (max-width: $bp-mobile) {
+                    min-width: 100%;
+                }
             }
         }
 
         .influencer-desc{
             width: 70%;
+            @media screen and (max-width: $bp-mobile) {
+                min-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
             // border: 1px solid red;
 
             .influencer-desc-heading{
@@ -466,6 +524,9 @@
                 color: #1a1a1a;
                 letter-spacing: 4px;
                 margin-bottom: 1rem;
+                @media screen and (max-width: $bp-mobile) {
+                    min-width: 300px;
+                }
             }
 
             .influencer-desc-detail{
@@ -476,6 +537,10 @@
                 font-size: 16px;
                 margin: 1rem 0;
                 line-height: 2;
+                @media screen and (max-width: $bp-mobile) {
+                    min-width: 300px;
+                    padding: 1em;
+                }
             }
         }
     }
@@ -519,6 +584,11 @@
             img{
                 width: 100%;
                 height: 100%;
+
+                @media screen and (max-width: $bp-mobile) {
+                    width: 70%;
+                    height: 70%;
+                }
             }
         }
     }

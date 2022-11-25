@@ -6,6 +6,9 @@ nav{
     align-items: center;
     padding: 0 10%;
     font-weight: 100;
+    @media screen and (max-width: $bp-mobile) {
+        flex-direction: column;
+    }
 
 
     .nav-logo{
@@ -25,12 +28,18 @@ nav{
 
     .nav-items{
         width: 35%;
+        @media screen and (max-width: $bp-mobile) {
+            width: 100%;
+        }
         ul{
             font-size: 20px;
             text-transform: uppercase;
             list-style-type: none;
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: $bp-mobile) {
+                font-size: 18px;
+            }
         }
     }
 
